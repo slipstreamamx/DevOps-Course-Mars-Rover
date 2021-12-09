@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "todo-app"
+name = "mars-rover"
 version = "0.1.0"
 description = "Mars Rover exercise"
 authors = []

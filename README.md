@@ -17,7 +17,7 @@ The site should include:
 
 * An engaging landing page to draw in users
 * A way of exploring photos from the Mars rovers.
-* Some ways of exploring data from the API or other information about NASA or Mars
+* Some ways of exploring data from the API or other information about NASA or Mars. This means using user input to make different API requests.
 
 It is important that the site could be easily extended into a full project if the prototype is successful
 
@@ -44,12 +44,12 @@ $ poetry run flask run
 
 Now visit [`http://localhost:5000/`](http://localhost:5000/) in your web browser to view the app.
 
-## Integrate with an API
+## Integrate with the API
 
-Firstly, install the [Requests library](https://docs.python-requests.org/en/latest/user/quickstart/) via Poetry by running the command `poetry add requests` in your terminal (from this folder). This will add it to your list of dependencies in the `pyproject.toml` file and also download it.
+Firstly, install the Requests library via Poetry by running the command `poetry add requests` in your terminal (from this folder). This will add it to your list of dependencies in the `pyproject.toml` file and also download it.
 
-Your Python files in this project can now import and use the `requests` module.
+Your Python files in this project can now import and use the `requests` module. See [this quickstart documentation](https://docs.python-requests.org/en/latest/user/quickstart/) for how to use it.
 
-You’ll need to get an API key by registering on the Open API website. You shouldn’t commit sensitive values like keys to source control. Instead, pass it to the code via an environment variable:
+You’ll need to get an API key by registering on the Open API website and then include it in your API requests, but you shouldn’t commit sensitive values like keys to source control. Instead, pass it to the code via an environment variable:
 - Fill in your `.env` file with an API key variable. By convention, environment variable names are uppercase with underscores.
 - You can access an environment variable from Python code by importing `os` and then using the expression `os.getenv('YOUR_ENV_VAR_NAME')`. 

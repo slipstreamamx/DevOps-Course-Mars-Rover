@@ -4,5 +4,24 @@
 {% block content %}
   <h1 class="display-4">Image of the Day:</h1>
 
-  <img src="{{ landing_image }}">
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <img src="{{ landing_image }}" class="rounded float-left" alt="Responsive image" alt="Lights" style="width:100%">
+        <h5>Explanation</h5>
+        <p class="text-justify">{{explanation}}</p>
+      </div>
+    </div>
+    <div class='col-sm-3'>
+      <div class="form-group">
+          <div class='input-group date' id='datetimepicker1'>
+              <input type='text' class="form-control" />
+              <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+              </span>
+          </div>
+      </div>
+  </div>
+  </div>
+</div>
 {% endblock %}
